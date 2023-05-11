@@ -11,12 +11,20 @@
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
 
   
-  <style>
+   <style>
+  			
+  			* {
+  							margin: 0;
+  							padding: 0;
+  							box-sizing: border-box;
+  							max-with: 100vw;
+  			} 	
+  			
     .container {
       max-width: 100%;
-      width: 100%;
-      height: 100vh;
-      Padding: 13px;
+      width: 1440px;
+      height: 720px;
+      Padding: 10px;
       background-image: url("images/bg-pattern-bottom.svg"), url("images/bg-pattern-top.svg");
       background-position: right bottom, left top;
       background-size: 40% auto;
@@ -31,22 +39,22 @@
       transform: translate(-50%, -50%);
       display: flex;
       flex-direction: column;
-      width: 300px;
-      height: 300px;
+      Max-width: 100vw;
+      width: 400px;
+      height: 400px;
       background-color: white;
       border-radius:15px;
     }
 
     .profile {
-      padding: 0;
       background-image: url("images/bg-pattern-card.svg");
-      height: 35%;
+      height: 40%;
       border-radius: 15px 15px 0 0;
     }
 
     .profile_pic {
       position: relative;
-      top: 50%;
+      top: 68%;
       left: 38%;
       width: 96px;
       height: 96px;
@@ -90,14 +98,26 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    @media (max-width: 767px) {
-      .container{
-        max-width: 100%;
-        width: 375px;
+				@media screen and (max-width: 375px) {
+      .card {
+        Max-width: 375px;
+        Width: 300px;
+        Height: 350px;
       }
-    }
+      
+     .profile_pic{
+    				position: relative;
+   				 top: 65%;
+    				left: 35%; 
+     } 
+  }   
+
+
+
+
+     
   </style>
-</head>
+</head
 <body>
   <div class="container">
     <div class="card">
